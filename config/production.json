@@ -1,0 +1,6 @@
+{
+    "mongoURI": "mongodb+srv://chris:DBpassword@dev-cluster.oruih.mongodb.net/appDB?retryWrites=true&w=majority",
+    "jwtSecret": "mysecrettoken",
+    "githubClientId": "273b1a99300f1cd36e2e",
+    "githubSecret": "01f60664c664a90404821c06c483125137b92ba8"
+}

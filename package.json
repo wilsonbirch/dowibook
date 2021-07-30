@@ -1,0 +1,65 @@
+{
+  "name": "dowibook",
+  "version": "1.0.0",
+  "description": "Social network for developers",
+  "engines": {
+    "node": "12.18"
+  },
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christopherjbourque/dowibook.git"
+  },
+  "author": "Donnie Alimov, Wilson Birch, Chris Bourque",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/christopherjbourque/dowibook/issues"
+  },
+  "homepage": "https://github.com/christopherjbourque/dowibook#readme",
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.2",
+    "express": "^4.17.1",
+    "express-validator": "^6.6.1",
+    "gravatar": "^1.8.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.9",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-moment": "^1.0.0",
+    "react-scripts": "^3.4.4",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.6"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
